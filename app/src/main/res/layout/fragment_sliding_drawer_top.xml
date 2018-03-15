@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +9,10 @@
     <com.github.ali.android.client.customview.view.SlidingDrawer
         android:id="@+id/slidingDrawer"
         android:layout_width="match_parent"
-        android:layout_height="800px"
+        android:layout_height="500px"
         android:layout_alignParentTop="true"
         android:background="@color/drawer_background"
-        custom:offsetDistance="200px"
+        custom:offsetDistance="1px"
         custom:stickTo="top">
 
         <RelativeLayout
@@ -30,6 +31,7 @@
 
             <fragment
                 android:id="@+id/controlFragment"
+                android:name="com.agung.android.slidingdrawer.ControlFragment"
                 android:layout_width="@dimen/button_size"
                 android:layout_height="@dimen/button_size"
                 android:layout_centerInParent="true"

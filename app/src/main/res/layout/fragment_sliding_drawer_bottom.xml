@@ -30,6 +30,7 @@
 
             <fragment
                 android:id="@+id/controlFragment"
+                android:name="com.agung.android.slidingdrawer.ControlFragment"
                 android:layout_width="@dimen/button_size"
                 android:layout_height="@dimen/button_size"
                 android:layout_centerInParent="true"
